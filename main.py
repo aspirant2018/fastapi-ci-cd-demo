@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 async def read_root():
-    return {"message": "Hello World"}
+    return  {"message": "Hello, CI/CD pipeline!"}
 
 @app.get("/square/{number}")
 async def square_number(number: int):
